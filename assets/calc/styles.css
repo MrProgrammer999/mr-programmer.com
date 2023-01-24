@@ -1,0 +1,90 @@
+p {
+  font-family: 'Rosewood Std Regular';
+  font-size: 1cm;
+  color: green;
+}
+.calculator {
+ padding: 5px;
+ border-radius: 1cm;
+ height: 50cm;
+ width: 30cm;
+ margin: auto;
+ background-color: #191b28;
+ box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.display-box {
+ font-family:'Stencil Std' ;
+ font-size: 5cm;
+ background-color:white;
+ border: solid black 0.5px;
+ color: black;
+ border-radius: 5px;
+ width: 95%;
+ height: 65%;
+}
+.button {
+    display:block;
+    width:7cm;
+    height:7cm;
+    line-height:80px;
+    border: 2px solid #f5f5f5;
+    border-radius: 50%;
+    color:#f5f5f5;
+    text-align:center;
+    text-decoration:none;
+    background: #555777;
+    box-shadow: 0 0 3px gray;
+    text-align: center;
+    font-size:4cm;
+    font-weight:bold;
+    font-family: 'Tunga' ;
+}
+.button:active {
+ background: #e5e5e5;
+ -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+ -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+ box-shadow: inset 0px 0px 5px #c1c1c1;
+}
+.gg-backspace {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 14px;
+    height: 14px;
+    transform: scale(var(--ggs,1));
+    border: 2px solid;
+    border-left: 0;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px
+  }
+  .gg-backspace::after,
+  .gg-backspace::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute
+  }
+  .gg-backspace::before {
+    background:
+        linear-gradient( to left,
+        currentColor 18px,transparent 0)
+        no-repeat center center/10px 2px;
+    border-right: 3px solid transparent;
+    box-shadow: inset 0 0 0 2px;
+    right: 2px;
+    bottom: 1px;
+    width: 8px;
+    height: 8px;
+    border-left: 3px solid transparent;
+    transform: rotate(45deg)
+  }
+  .gg-backspace::after {
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid;
+    border-left: 2px solid;
+    border-top-left-radius: 1px;
+    transform: rotate(-45deg);
+    top: 0;
+    left: -5px
+  }
